@@ -1,4 +1,6 @@
 export function log(mensagem) {
-    console.log('Executando mensagem em arquivo externo log.mjs. Após GitHub Action: ' + mensagem);
+    console.log(process.env.MINHA_VAR);
+    
+    console.log('Função log.mjs' + mensagem);
 
 }
